@@ -2,6 +2,7 @@ $first-color: #ffc300;
 $second-color: #24252a;
 $third-color: #edf0f1;
 $fourth-color: rgb(243, 95, 69);
+$main-font: "Manjari", sans-serif;
 
 @mixin images-comic {
   width: 10rem;
@@ -16,7 +17,7 @@ $fourth-color: rgb(243, 95, 69);
 
 body {
   background-image: url(img/bg.jpg);
-  font-family: "Manjari", sans-serif;
+  font-family: $main-font;
   padding: 50px;
   .headercontainer {
     display: flex;
@@ -36,10 +37,10 @@ body {
       font-weight: 900;
       font-size: 18px;
       color: $third-color;
-      font-family: "Manjari", sans-serif;
+      font-family: $main-font;
     }
     button {
-      font-family: "Manjari", sans-serif;
+      font-family: $main-font;
       font-weight: 500;
       font-size: 16px;
       color: $third-color;
