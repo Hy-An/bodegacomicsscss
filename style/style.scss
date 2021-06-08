@@ -1,0 +1,141 @@
+$first-color: #ffc300;
+$second-color: #24252a;
+$third-color: #edf0f1;
+$fourth-color: rgb(243, 95, 69);
+
+@mixin images-comic {
+  width: 10rem;
+  height: 10rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(img/bg.jpg);
+  font-family: "Manjari", sans-serif;
+  padding: 50px;
+  .headercontainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .header {
+    background-color: $second-color;
+    width: 100vw;
+    position: relative;
+    left: -50px;
+    top: -50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    .logo {
+      font-weight: 900;
+      font-size: 18px;
+      color: $third-color;
+      font-family: "Manjari", sans-serif;
+    }
+    button {
+      font-family: "Manjari", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: $third-color;
+      text-decoration: none;
+    }
+    .nav__links {
+      list-style: none;
+      li {
+        display: inline-block;
+        padding: 0px 20px;
+      }
+      a {
+        transition: all 0.3s ease 0s;
+      }
+      a:hover {
+        color: $first-color;
+      }
+      button {
+        padding: 9px 25px;
+        background-color: $first-color;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        :hover {
+          background-color: $fourth-color;
+        }
+        .bg-img {
+          background-image: url(img/banner-blog.png);
+          width: 800px;
+          height: 400px;
+          border: 1px $second-color;
+          align-self: center;
+        }
+        .container-header {
+          display: flex;
+          height: 10rem;
+        }
+      }
+    }
+  }
+  .comicsG {
+    @include images-comic;
+  }
+  .title h1 {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2.9em;
+  }
+
+  .bigcontainer {
+    display: flex;
+    flex-direction: column;
+    .container {
+      background: $first-color;
+      width: 90%;
+      max-width: 100vh;
+      margin: 1.6em auto;
+      border: 1px $second-color;
+      display: flex;
+      flex-direction: row;
+      padding: 20px;
+    }
+  }
+  .relatedPostParent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    max-width: 100vh;
+    margin: 1em auto;
+    border: 1px $second-color;
+    padding: 20px;
+    background: $first-color;
+    img {
+      width: 7.9rem;
+      height: 11rem;
+      padding: 0.5rem;
+      width: 8rem;
+      height: 11rem;
+      padding: 0.5rem;
+      opacity: 1;
+      :hover {
+        opacity: 0.5;
+      }
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  .footer {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1em;
+  }
+}

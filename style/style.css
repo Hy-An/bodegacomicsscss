@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-image: url(img/bg.jpg);
+  font-family: "Manjari", sans-serif;
+  padding: 50px; }
+  body .headercontainer {
+    display: flex;
+    flex-direction: column; }
+  body .header {
+    background-color: #24252a;
+    width: 100vw;
+    position: relative;
+    left: -50px;
+    top: -50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%; }
+    body .header .logo {
+      font-weight: 900;
+      font-size: 18px;
+      color: #edf0f1;
+      font-family: "Manjari", sans-serif; }
+    body .header button {
+      font-family: "Manjari", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: #edf0f1;
+      text-decoration: none; }
+    body .header .nav__links {
+      list-style: none; }
+      body .header .nav__links li {
+        display: inline-block;
+        padding: 0px 20px; }
+      body .header .nav__links a {
+        transition: all 0.3s ease 0s; }
+      body .header .nav__links a:hover {
+        color: #ffc300; }
+      body .header .nav__links button {
+        padding: 9px 25px;
+        background-color: #ffc300;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s; }
+        body .header .nav__links button :hover {
+          background-color: #f35f45; }
+        body .header .nav__links button .bg-img {
+          background-image: url(img/banner-blog.png);
+          width: 800px;
+          height: 400px;
+          border: 1px #24252a;
+          align-self: center; }
+        body .header .nav__links button .container-header {
+          display: flex;
+          height: 10rem; }
+  body .title h1 {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2.9em; }
+  body .bigcontainer {
+    display: flex;
+    flex-direction: column; }
+    body .bigcontainer .container {
+      background: #ffc300;
+      width: 90%;
+      max-width: 100vh;
+      margin: 1.6em auto;
+      border: 1px #24252a;
+      display: flex;
+      flex-direction: row;
+      padding: 20px; }
+  body .relatedPostParent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    max-width: 100vh;
+    margin: 1em auto;
+    border: 1px #24252a;
+    padding: 20px;
+    background: #ffc300; }
+    body .relatedPostParent img {
+      width: 7.9rem;
+      height: 11rem;
+      padding: 0.5rem;
+      width: 8rem;
+      height: 11rem;
+      padding: 0.5rem;
+      opacity: 1; }
+      body .relatedPostParent img :hover {
+        opacity: 0.5; }
+    body .relatedPostParent .cards {
+      display: flex;
+      flex-direction: row; }
+    body .relatedPostParent .comicsG {
+      width: 10rem;
+      height: 10rem; }
+  body .footer {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1em; }
+
+/*# sourceMappingURL=style.css.map */
